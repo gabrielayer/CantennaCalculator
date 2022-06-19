@@ -1,0 +1,772 @@
+html {}
+
+div.task:before { content: attr(data-task-owner)"R$ " ; color: #d1d1d1; } /* CHANGE CURRENCY HERE */
+
+
+
+body .btnx,
+body .btn2x {
+  width: 30px;
+  height: 50px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 100px;
+  color: rgba(255,255,255,0.9);
+  border-radius: 50px;
+  
+}
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+footer {
+text-align: center;
+
+}
+
+.grid-item .quantity-input input {
+
+  border-style: none;
+  text-align: center;
+  color: #000;
+}
+
+.input-qt {
+width: 50px;
+border-style: none;
+text-align: center;
+background: transparent;
+}
+
+.product-quantity{
+margin-bottom: 25px;
+}
+
+.btn {
+  /*border-radius: 50px;*/
+  border-style: none;
+    border-radius: 50px;
+    color: white;
+    background: #323232;
+
+}
+
+.btnClear{
+  /*border-radius: 50px;*/
+  border-style: none;
+    border-radius: 50px;
+    background-color: #00a1ff;
+    color: white;
+  
+}
+
+.btnB {
+  border-radius: 4px;
+  border-style: none;
+  margin-top: 3px;
+    width: 150px;
+    height: 28px;
+    background-color: #00a1ff;
+    color: white;
+    background: linear-gradient(-45deg, #7f00ff, #a851ff, #338aff, #0088ff);
+  background-size: 600%;
+  -webkit-animation: anime 20s linear infinite;
+          animation: anime 20s linear infinite;
+}
+
+.btn-k1 {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.navigation {
+  min-height: 50px;
+  display: block;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  padding-left: 10px;
+  padding-right: 10px;
+  background: black;
+  
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  max-width: 150px;
+  margin-top: 6px;
+}
+
+.mini-cart {
+  float: center;
+}
+
+.mini-cart-button {
+  float: right;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 6px 8px;
+  position: relative;
+  top: 9px;
+  background: none;
+  border-width: 2px;
+  border-color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+}
+
+.mini-cart-button span {}
+
+.mini-cart-container {
+  min-height: 200px;
+  position: absolute;
+  width: 50%;
+  max-width: 400px;
+  display: none;
+  background: white;
+  box-shadow: 0px 10px 50px -5px rgb(199, 199, 199);
+  top: 50px;
+  right: 10px;
+  z-index: 1;
+}
+
+.mini-cart-container ul {
+  margin-left: 0!important;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+
+.mini-cart-container ul li {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid grey;
+  min-height: 60px;
+}
+
+.mini-cart-container ul li h3 {
+  font-size: 16px;
+}
+
+.mini-cart-container ul li h3 span {
+  font-size: 16px;
+  color: grey;
+  position: relative;
+}
+
+.mini-cart-container ul li span {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+.mini-cart-open {
+  display: block;
+}
+
+.product-grid {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 0px;
+}
+
+.grid-item {
+  text-align: center;
+  margin:7px;
+  border-color: #ebebeb;
+    border-style: none;
+    border-width: thin;
+    border-radius: 10px;
+  transition: all .25s ease;
+  max-width: 290px;
+  position:relative;
+  background-color: #00a1ff;
+  color: white;
+  
+  background: linear-gradient(-40deg, #000000, #202020);
+  
+background-size: 300%;
+
+  
+}
+
+.pagamentodiv {
+  margin-top: 42px;
+  margin-left: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(203, 203, 203);
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  width: 93.5%;
+}
+
+.div001 {
+  margin-left: 25px;
+  margin-right: 40px;
+  justify-content: left;
+  align-items: baseline;
+  width: 93.5%;
+
+}
+
+
+.div1 {
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.input1 {
+  background-color: #f1f1f1;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 7px;
+  margin: 10px;
+  padding-left: 19px;
+  width: auto;
+}
+
+
+.input2 {
+  background-color: #f1f1f1;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 7px;
+  margin: 10px;
+  padding-left: 19px;
+  width: 120px;
+}
+
+.input3 {
+  background-color: #f1f1f1;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 7px;
+  /*margin: 10px;*/
+  padding-left: 19px;
+  width: 125px;
+  margin-top: 4px;
+}
+
+.input4 {
+  background-color: #f1f1f1;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 7px;
+  /*margin: 10px;*/
+  padding-left: 19px;
+  width: 195px;
+  margin-top: 4px;
+  height: 50px;
+}
+
+.grid-item:hover {
+
+}
+
+.h3, h3 {
+  font-size: 15px;
+}
+
+.grid-item img {
+  margin-top: 15px;
+}
+
+.description {
+  font-size: 11.5px;
+  color: #b7b7b7;
+}
+
+.grid-item h1 {
+  font-weight: 650;
+  font-size: 12px;
+  margin-bottom: 6px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.grid-item h3 {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.grid-item .quantity-input {
+  margin: 5px auto;
+  padding-bottom: 15px;
+}
+
+.grid-item .quantity-input button {}
+
+.grid-item .quantity-input input {
+  max-width: 50px;
+}
+
+.add-to-cart-button {
+  background: rgb(170, 214, 240);
+    color: rgb(0, 0, 0);
+    border-style: none;
+}
+
+.mini-cart-totals {
+  text-align: center;
+}
+
+#total-price {
+  float: left;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 10px;
+  min-width: 100px;
+  margin-left: 20px;
+}
+
+#total-items {
+  float: left;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 10px;
+  min-width: 100px;
+  margin-right: 20px;
+}
+
+#total-items p,
+#total-price p {
+  font-weight: 700;
+  color: grey;
+  margin-bottom: 0;
+}
+
+#total-items span,
+#total-price span {
+  font-size: 16px;
+  font-weight: 700;
+  color: grey;
+}
+
+.succes-message {
+  display: none;
+  position: absolute;
+  height:100px;
+  background:white;
+  width: 200px;
+  z-index: 2;
+  left: 40%;
+  right: 0;
+  top:30%;
+  font-size:20px;
+  box-shadow: 0px 0px 20px -1px rgb(99, 99, 99);
+  text-align:center;
+  padding:20px;
+}
+
+table {
+  border: 1px solid rgb(241, 241, 241);
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 93.5%;
+  table-layout: fixed;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+  width: 225px;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+.pagamentodiv{
+  margin-top: 80px;
+    margin-left: 25px;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+}
+
+  .labelA {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: -5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+/* general styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  margin: 40px;
+}
+
+.bodyclass {
+  margin: 40px;
+}
+
+.navigation {
+  height: 60px;
+  background: #2c2c2c;
+  border-style: none;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #262626;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #2581DC;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #262626;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.row {
+  margin: 10px;
+}
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  border-style: none; background-color: transparent; padding-left: 10px; padding-right: 10px;
+}
+
+input {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  display: table-cell;
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.suffix input {
+  
+}
+.suffix .input-group-addon {
+
+}
+.prefix input {
+  border-radius: 0px 4px 4px 0px;
+}
+.prefix .input-group-addon {
+  border-right: 0;
+  border-radius: 4px 0px 0px 4px;
+}
+.presuffix input {
+ 
+}
+.input-group-addon.prefix {
+  border-radius: 4px 0px 0px 4px;
+  border-right: 0;
+}
+.input-group-addon.suffix {
+
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+/* prepare wrapper element */
+div {
+  display: inline-block;
+  position: relative;
+}
+
+/* position the unit to the right of the wrapper */
+div::after {
+  position: absolute;
+  top: 2px;
+  right: .5em;
+  transition: all .05s ease-in-out;
+}
+
+/* move unit more to the left on hover or focus within
+   for arrow buttons will appear to the right of number inputs */
+div:hover::after,
+div:focus-within::after {
+  right: 1.5em;
+}
+
+/* handle Firefox (arrows always shown) */
+@supports (-moz-appearance:none) {
+  div::after {
+    right: 1.5em;
+  }
+}
+
+/* set the unit abbreviation for each unit class */
+.ms::after {
+  content: 'ms';
+}
+.db::after {
+  content: 'db';
+}
+.percent::after {
+  content: '%';
+}
+
+
